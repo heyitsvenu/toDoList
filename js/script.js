@@ -13,6 +13,8 @@ function addTodo(e) {
   myList.appendChild(li);
   input.value = '';
   input.select();
+  var h2 = document.querySelector('h2');
+  h2.innerHTML = 'Your list <span id="notice">[click on the item to check]</span>';
 }
 
 function doneTodo(e) {
