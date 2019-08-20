@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  padding: 0;
+  font: 1.6em arial, helvetica, sans-serif;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header{
+  background: #cccccc;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.my-form{
+  margin: 20px 0 0 0;
+  padding: 10px;
+  border: 3px solid #cccccc;
+  border-radius: 10px;
+}
+
+input{
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+li{
+  padding: 5px;
+}
+
+.done{
+  text-decoration: line-through;
+}
