@@ -3,6 +3,7 @@ body{
   padding: 0;
   font: 1.6em arial, helvetica, sans-serif;
   background: url("../images/todo.jpg") 0px -1190px;
+  box-sizing: border-box;
 }
 
 .container{
@@ -16,15 +17,47 @@ header{
   background: #16c0a4;
   border-radius: 10px;
   margin: 10px;
-  text-align: center;
+}
+
+header #header{
+  display: flex;
+}
+
+header #logo{
+  flex: 1;
+}
+
+header nav{
+  flex: 1;
+  margin: 25px;
+}
+
+header nav ul{
+  list-style-type: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+header ul li{
+  flex: 1;
+  text-align: right;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover{
+  color: black;
+  text-shadow: 2px 2px 4px gray;
+  font-size: 1.1em;
+  
 }
 
 .my-form{
   margin: 20px 0 0 0;
   padding: 10px;
-  /* border: 3px solid #16c0a4; */
-  border-radius: 10px;
-  width: 50%;
 }
 
 input{
@@ -56,21 +89,40 @@ li{
   font-size: .5em;
 }
 
-@media (max-width: 1180px){
-  body{
-    background: url("../images/todo.jpg");
+@media (max-width: 951px){
+  header #header{
+    display: block;
+    padding: 2px 0px 2px 0px;
   }
 
-  .my-form{
-    width: 65%;
+  header #logo{
+    text-align: center;
+  }
+
+  header nav ul{
+    display: block;
+  }
+
+  header nav ul li{
+    text-align: center;
+  }
+
+  input{
+    display: block;
+    width: 100%;
+  }
+
+  .my-form #input{
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  .my-form #submit{
+    margin-left: 0px;
+    margin-top: 20px;
   }
 
   #notice{
     display: block;
-  }
-
-  input[type="submit"]{
-    margin-left: 0;
-    margin-top: 20px;
   }
 }
