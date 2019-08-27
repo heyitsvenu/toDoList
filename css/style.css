@@ -57,7 +57,6 @@ li a:hover{
 
 .my-form{
   margin: 20px 0 0 0;
-  padding: 10px;
 }
 
 input{
@@ -69,20 +68,25 @@ input{
 input[type="submit"]{
   background: #16c0a4;
   color: whitesmoke;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 
-ul{
+section ul{
   list-style-type: upper-roman;
 }
 
-li{
+section ul li{
   padding: 5px;
   font-size: .8em;
 }
 
+section ul li:hover{
+  font-weight: bold;
+}
+
 .done{
   text-decoration: line-through;
+  color: green;
 }
 
 #notice{
@@ -105,6 +109,7 @@ li{
 
   header nav ul li{
     text-align: center;
+    padding: 10px;
   }
 
   input{
@@ -119,7 +124,7 @@ li{
 
   .my-form #submit{
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   #notice{
